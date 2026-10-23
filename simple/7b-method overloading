@@ -1,0 +1,25 @@
+class Demo {
+    Demo() {
+        System.out.println("Default Constructor");
+    }
+
+    Demo(int a) {
+        System.out.println("Value = " + a);
+    }
+
+    void add(int a, int b) {
+        System.out.println("Sum = " + (a + b));
+    }
+
+    void add(int a, int b, int c) {
+        System.out.println("Sum = " + (a + b + c));
+    }
+
+    public static void main(String[] args) {
+        Demo d1 = new Demo();
+        Demo d2 = new Demo(10);
+
+        d1.add(5, 10);
+        d1.add(5, 10, 15);
+    }
+}
